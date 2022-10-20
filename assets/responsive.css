@@ -12,4 +12,18 @@
         position: absolute;
     }
 
+
+
+
+
+    /* /////////// main /////////// */
+
+    main > div{
+        flex-direction: column;
+    }
+
+    main section {
+        width: 100%;
+    }
+
 }

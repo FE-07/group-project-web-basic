@@ -8,6 +8,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    padding-bottom: 100px;
 }
 
 .hilang{
@@ -15,9 +16,27 @@ body{
     position: absolute;
 }
 
+.flex-basis-half{
+    flex-basis: 50%;
+}
+
 /* ////////// color style /////////// */
+.bg-Abu{
+    background-color: #E4E7EA;
+}
+
 .bg-Biru{
     background-color: #2464AB;
+}
+
+.bg-acc{
+    background-color: #1AAE9F;
+    color: white;
+}
+
+.bg-tolak{
+    background-color: #D3455B;
+    color: white;
 }
 /* ////////// color style end //////// */
 
@@ -63,4 +82,48 @@ nav > div > a:nth-child(3):hover{
 
 main .btn-buat-campaign:hover{
     background-color: #3DA5DA;
+}
+/* //////////// main end ////////////////// */
+
+/* //////////// form /////////////////// */
+input{
+    border: solid 2px #E4E7EA;
+    padding: 2px;
+    border-radius: 4px;
+    outline-color: #2464AB;
+}
+
+textarea{
+    height: 100px;
+    border: solid 2px #E4E7EA;
+    outline-color: #2464AB;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+form .tombol-submit:hover{
+    background-color: #3DA5DA;
+}
+/* ///////// form end //////// */
+
+/* //////// card start ///////// */
+.card {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card .card-image{
+    background: url("dummy-image.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+}
+
+.card .status{
+    padding: 4px 8px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 6px;
+    
 }
