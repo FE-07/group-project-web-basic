@@ -25,6 +25,10 @@ body{
 
 header{
     box-shadow: 0 4px 10px rgba(26, 3, 3, 0.15);
+    background-color: white;
+
+    position: sticky;
+    top: 0;
 }
 /* ////// nav /////////// */
 nav {
@@ -46,3 +50,17 @@ nav > div > a:nth-child(3):hover{
     
 
 /* ///// nav end //////// */
+
+
+/* ///////////////////////////////////////////// */
+/* ////////////// campaign html //////////////// */
+/* ///////////////////////////////////////////// */
+
+/* /////////// main start //////////////// */
+.campaign-page{
+    height: 600px;
+}
+
+main .btn-buat-campaign:hover{
+    background-color: #3DA5DA;
+}
