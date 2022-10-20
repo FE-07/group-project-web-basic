@@ -1,0 +1,15 @@
+@media (max-width: 576px) { 
+
+    /* /////// nav /////////// */
+
+    nav .Icon-user{
+        visibility: visible;
+        position:static;
+    }
+
+    nav .navigasi-page{
+        visibility: hidden;
+        position: absolute;
+    }
+
+}
