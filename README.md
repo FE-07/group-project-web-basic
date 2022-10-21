@@ -1,7 +1,7 @@
 # Group Project Web
-> Asean Youth Organization
+## > Asean Youth Organization
 
-## Progress
+### Progress
 - Home page
 - Login page
 - Register page
