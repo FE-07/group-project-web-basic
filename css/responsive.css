@@ -1,49 +1,3 @@
-@media (max-width: 576px) { 
-
-    /* /////// nav /////////// */
-
-    nav .Icon-user{
-        visibility: visible;
-        position:static;
-    }
-
-    nav .navigasi-page{
-        visibility: hidden;
-        position: absolute;
-    }
-
-
-
-
-
-    /* /////////// main /////////// */
-    main > div{
-        flex-direction: column;
-    }
-
-    main section {
-        width: 100%;
-    }
-
-    main > section > .card > div:nth-child(2) > div{
-        flex-direction: column;
-    }
-    main section .card .font-kecil{
-        font-size: 10px;
-        font-weight: bold;
-    }
-
-
-
-      /* home */
-    .desc button, .content button{
-        width: 100%;
-        height: 35px;
-    
-}
-}
-
-
 @media (min-width: 768px) {
     /* home */
     .home{
@@ -92,3 +46,17 @@
         width: 400px;
     }
 }
+
+@media (max-width: 576px){
+    /* home */
+    .desc button, .content button{
+        width: 100%;
+        height: 35px;
+    }
+    .list{
+        display: none;
+    }
+}
+
+
+/* -------RESPONSIVE REGISTRATION---------- */
