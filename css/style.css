@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --darkblue: #2464AB;
+    --black: #232323;
+    --white: #ffffff;
+    --lightblue: #3DA5DA;
+}
+
+/* Start Home Page */
+header{
+    padding: 10px 0px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.list{
+    gap: 30px;
+    display: flex;
+    margin: 0;
+}
+
+.list a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+.btn-darkblue:hover{
+    background-color: var(--lightblue);
+}
+
+.btn-darkblue{
+    padding: 3px 15px;
+    background-color: var(--darkblue);
+    border-radius: 5px;
+}
+/* End Home Page */
+
+
+
+/* Start Registration Page */
+.regis .btn-darkblue{
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+
+.image-regis{
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.btn-lightblue{
+    background-color: var(--lightblue);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+/* End Registration Page */

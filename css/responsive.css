@@ -1,0 +1,62 @@
+@media (min-width: 768px) {
+    /* home */
+    .home{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .desc h2{
+        font-size: 55px;
+    }
+    .desc p{
+        font-size: 20px;
+    }
+    .desc button{
+        width: 150px;
+        height: 35px;
+    }
+    .profile{
+        display: none;
+    }
+
+
+    /* regis */
+    .regis{
+        display: flex;
+        justify-content: space-between;
+    }
+    .image-regis{
+        height: 400px;
+    }
+    .regis .data{
+        width: 50%;
+    }
+    .regis .berkas{
+        width: 25%;
+    }
+
+    /* login */
+    .login{
+        display: flex;
+        gap: 100px;
+        align-items: center;
+    }
+    .form-login .content, .form-login .content button{
+        width: 400px;
+    }
+}
+
+@media (max-width: 576px){
+    /* home */
+    .desc button, .content button{
+        width: 100%;
+        height: 35px;
+    }
+    .list{
+        display: none;
+    }
+}
+
+
+/* -------RESPONSIVE REGISTRATION---------- */

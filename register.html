@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Register</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Start Header -->
+        <header>
+            <nav class="container d-flex justify-content-between align-items-center">
+                <div class="image">
+                    <img src="./assets/logo Ayo Bantu!.png" alt="" width="100">
+                </div>
+                
+                <ul class="list">
+                    <a href="./home.html">Home</a>
+                    <a href="">Galang Dana</a>
+                    <a class="btn-darkblue text-white" href="./login.html">Login</a>
+                </ul>
+
+                <div class="profile">
+                    <img src="./assets/icons-user.png" alt="">        
+                </div>
+            </nav>
+        </header>
+        <!-- End Header -->
+
+        <section>
+            <div class="container">
+                <div class="image-regis my-3">
+                    <img src="./assets/img-regis.jpg" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <h3 class="fw-bold">Daftar</h3>
+                    <div class="d-flex gap-3 mb-3">    
+                        <div class="d-flex align-items-center">
+                            <input type="radio" name="" id="">
+                            <p class="ps-1 m-0">Partner/Donatur</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <input type="radio" name="" id="">
+                            <p class="ps-1 m-0">Penggalang Dana</p>
+                        </div>
+                    </div>
+
+                    <div class="regis">
+                        <div class="data">
+                            <div class="mb-3">
+                                <label for="nama" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="nama" placeholder="masukkan nama lengkap">
+                            </div>
+                            <div class="mb-3">
+                                <label for="ttl" class="form-label">Tanggal Lahir</label>
+                                <input type="date" class="form-control" id="ttl">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nohp" class="form-label">Nomor HP</label>
+                                <input type="text" class="form-control" id="nohp" placeholder="masukkan nomor hp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="masukkan email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="alamat" class="form-label">Alamat</label>
+                                <input type="text" class="form-control" id="alamat" placeholder="masukkan alamat">
+                            </div>
+                            <div class="d-flex gap-3 mb-3">    
+                                <div class="d-flex align-items-center">
+                                    <input type="radio" name="" id="">
+                                    <p class="ps-1 m-0">Disabilitas</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <input type="radio" name="" id="">
+                                    <p class="ps-1 m-0">Non-Disabilitas</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="berkas">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="username" placeholder="masukkan username">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="masukkan password">
+                            </div>
+                            <div class="mb-3">
+                                <label for="repassword" class="form-label">Repeat Password</label>
+                                <input type="password" class="form-control" id="repassword" placeholder="masukkan ulang password">
+                            </div>
+                            <div class="mb-3">
+                                <label for="data1" class="form-label">Upload Bukti Disabilitas</label>
+                                <input class="form-control" type="file" id="formFile">
+                                <button class="w-100 border-0 mt-3 py-2 btn-lightblue">Upload File</button>
+                            </div>
+                            <button class="btn-darkblue w-100 border-0 my-3 py-2">Daftar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+</html>
