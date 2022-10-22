@@ -106,13 +106,18 @@ button{
     background-color: var(--buttonrej);
 }
 
+.btn-view{
+    background-color: rgb(199, 199, 199);
+    color: black;
+}
+
 .detil-item{
     height: 90%;
 }
 
 .close{
-    position: absolute;
-    left: 90%;
+    position: relative;
+    left: 95%;
     cursor:pointer;
     padding: 5px 10px 5px 10px;
 }
