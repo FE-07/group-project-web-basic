@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+
+:root{
+    --darkblue: #2464AB;
+    --black: #232323;
+    --white: #ffffff;
+    --lightblue: #3DA5DA;
+}
+
+
 body{
     font-family: 'Poppins', sans-serif;
     padding-bottom: 100px;
@@ -127,3 +136,43 @@ form .tombol-submit:hover{
     border-radius: 6px;
     
 }
+
+
+/* ///////////////////////////////////////////// */
+/* ////////////// home html //////////////// */
+/* ///////////////////////////////////////////// */
+
+.btn-darkblue:hover{
+    background-color: var(--lightblue);
+}
+
+.btn-darkblue{
+    padding: 3px 15px;
+    background-color: var(--darkblue);
+    border-radius: 5px;
+}
+/* ////////////// home html end //////////////// */
+
+
+
+/* ///////////////////////////////////////////// */
+/* ////////////// register html //////////////// */
+/* ///////////////////////////////////////////// */
+
+.regis .btn-darkblue{
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+
+.image-regis{
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.btn-lightblue{
+    background-color: var(--lightblue);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+/* ////////////// register html end //////////////// */

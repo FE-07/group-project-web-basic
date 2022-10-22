@@ -1,67 +1,68 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Login</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/responsive.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    </head>
-    <body>
-        <!-- Start Header -->
-        <header>
-            <nav class="container d-flex justify-content-between align-items-center">
-                <div class="image">
-                    <img src="./assets/logo Ayo Bantu!.png" alt="" width="100">
-                </div>
-                
-                <ul class="list">
-                    <a href="">Home</a>
-                    <a href="">Galang Dana</a>
-                    <a class="btn-darkblue text-white" href="">Login</a>
-                </ul>
 
-                <div class="profile">
-                    <img src="./assets/icons-user.png" alt="">        
-                </div>
-            </nav>
-        </header>
-        <!-- End Header -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
 
-        <section>
-            <div class="container login">
-                <div class="image">
-                    <img src="./assets/img-landing.png" alt="" class="img-fluid">
+<body>
+    <!------------- header start ------------------>
+    <header>
+        <nav class="container d-flex align-items-center justify-content-between">
+            <img src="assets/logo Ayo Bantu!.png" alt="logo ayo bantu" height="40">
+            <div class="d-flex align-items-center p-2 navigasi-page">
+                <a class="text-decoration-none ms-5" href="">Home</a>
+                <a class="text-decoration-none ms-5" href="">Galang Dana</a>
+                <a class="text-decoration-none text-white ms-5 btn bg-Biru" href="">Login</a>
+            </div>
+            <img src="assets/icons-user.png" alt="icons user" height="40p" class="hilang Icon-user">
+        </nav>
+    </header>
+    <!------------- header end -------------------->
+
+    <section>
+        <div class="container login">
+            <div class="image">
+                <img src="./assets/img-landing.png" alt="" class="img-fluid">
+            </div>
+            <div class="form-login mx-3">
+                <h3 class="fw-bold">Login</h3>
+                <div class="d-flex gap-3 mb-3">
+                    <div class="d-flex align-items-center">
+                        <input type="radio" name="" id="">
+                        <p class="ps-1 m-0">Admin</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <input type="radio" name="" id="">
+                        <p class="ps-1 m-0">User</p>
+                    </div>
                 </div>
-                <div class="form-login mx-3">
-                    <h3 class="fw-bold">Login</h3>
-                    <div class="d-flex gap-3 mb-3">    
-                        <div class="d-flex align-items-center">
-                            <input type="radio" name="" id="">
-                            <p class="ps-1 m-0">Admin</p>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <input type="radio" name="" id="">
-                            <p class="ps-1 m-0">User</p>
-                        </div>
+                <div class="content">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="masukkan username">
                     </div>
-                    <div class="content">
-                        <div class="mb-3">
-                            <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control" id="username" placeholder="masukkan username">
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="masukkan password">
-                        </div>
-                        <button class="btn-darkblue text-white w-100 border-0 my-3 py-2">Login</button>
-                        <p class="text-center">belum memiliki akun? <a class="text-decoration-none" href="./register.html"><span class="fw-bold">Daftar</span></a></p>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="masukkan password">
                     </div>
+                    <button class="btn-darkblue text-white w-100 border-0 my-3 py-2">Login</button>
+                    <p class="text-center">belum memiliki akun? <a class="text-decoration-none"
+                            href="./register.html"><span class="fw-bold">Daftar</span></a></p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
