@@ -26,4 +26,11 @@
         width: 100%;
     }
 
+    main > section > .card > div:nth-child(2) > div{
+        flex-direction: column;
+    }
+    main section .card .font-kecil{
+        font-size: 10px;
+        font-weight: bold;
+    }
 }
