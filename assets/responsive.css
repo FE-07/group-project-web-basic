@@ -17,7 +17,6 @@
 
 
     /* /////////// main /////////// */
-
     main > div{
         flex-direction: column;
     }
