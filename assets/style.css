@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+:root{
+    /*Judul selain home = H2
+font family = poppins
+buttonColor acc = #1AAE9F
+buttonColor tolak = #D3455B
+responsive = media query max-width*/
+
+--buttonacc : #1AAE9F;
+--buttonrej : #D3455B;
+font-family: 'Poppins', sans-serif;
+}
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -46,3 +60,59 @@ nav > div > a:nth-child(3):hover{
     
 
 /* ///// nav end //////// */
+
+/* ///// main //////// */
+
+
+.container-main{
+    height: 120px;
+}
+
+
+.konten-filter{
+    gap: 15px;
+    width: 100%;
+}
+
+.item-content{
+    width: auto;
+    height: 35%;
+    cursor: pointer;
+}
+
+.container-list{
+    height: 100vh;
+}
+
+.title-list{
+    height: 90px;
+}
+
+.button{
+    gap: 10px;
+    width: 35%;
+}
+
+button{
+    border: none;
+    color: white;
+}
+
+.btn-acc{
+    background-color: var(--buttonacc);
+}
+
+.btn-rej{
+    background-color: var(--buttonrej);
+}
+
+.detil-item{
+    height: 90%;
+}
+
+.close{
+    position: absolute;
+    left: 90%;
+    cursor:pointer;
+    padding: 5px 10px 5px 10px;
+}
