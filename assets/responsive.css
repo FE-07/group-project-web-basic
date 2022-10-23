@@ -33,15 +33,53 @@
         font-weight: bold;
     }
 
-
-
+        
       /* home */
     .desc button, .content button{
         width: 100%;
         height: 35px;
+
     
     }
 
+
+    /* List campaign*/
+
+    .container-main{
+        font-size: 14px;
+    }
+
+    .container-list{
+        height: fit-content;
+    }
+
+    .detil-item{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card-campaign{
+        flex-direction: column;
+    }
+
+    .button{
+        width: 100%;
+        height: 50px;
+    }    
+
+    .img-campaign{
+     width: 100%; 
+    }
+
+    .isi-desc{
+        text-overflow: ellipsis;
+    }
+
+    .btn-item{
+        width: 100%;
+        height: 100%;
+    }
+    
 }
 
 
@@ -92,4 +130,25 @@
     .form-login .content, .form-login .content button{
         width: 400px;
     }
+
+<<<<<<< HEAD
+
+    /* List campaign*/
+    .container-list{
+        height: fit-content;
+    }
+
+    .detil-item{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .isi-desc{
+        width: 100%;
+        height: 100%;
+    }
+
 }
+=======
+}
+>>>>>>> zaq
