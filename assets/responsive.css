@@ -33,8 +33,7 @@
         font-weight: bold;
     }
 
-
-
+        
       /* home */
     .desc button, .content button{
         width: 100%;
@@ -92,4 +91,5 @@
     .form-login .content, .form-login .content button{
         width: 400px;
     }
+
 }
