@@ -240,6 +240,10 @@ button {
   height: 100%;
 }
 
+.card-detil{
+    z-index: -1;
+}
+
 .detil-item {
   height: 90%;
 }
@@ -248,7 +252,7 @@ button {
   width: 50%;
   height: 100%;
 }
-<<<<<<< HEAD
+
 .close {
   position: absolute;
   top: 0;
@@ -256,6 +260,5 @@ button {
   z-index: -1;
   cursor: pointer;
   padding: 5px 10px 5px 10px;
->>>>>>> bbf98ce03d411c625993de40a9b7e79ce1c98fde
 }
 
