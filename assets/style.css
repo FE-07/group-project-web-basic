@@ -237,6 +237,10 @@ button {
   height: 100%;
 }
 
+.card-detil{
+    z-index: -1;
+}
+
 .detil-item {
   height: 90%;
 }
