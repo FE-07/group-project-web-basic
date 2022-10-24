@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/responsive.css">
     <title>Buat Campaign</title>
+    <script src="./js/buatCampaign.js" defer></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
             <div class="d-flex align-items-center p-2 navigasi-page">
                 <a class="text-decoration-none ms-5" href="index.html">Home</a>
                 <a class="text-decoration-none ms-5" href="#">Galang Dana</a>
-                <a class="text-decoration-none text-white ms-5 btn bg-Biru" href="login.html">Login</a>
+                <a class="text-decoration-none text-white ms-5 btn bg-Biru" href="login.html">Logout</a>
             </div>
             <img src="assets/icons-user.png" alt="icons user" height="40p" class="hilang Icon-user">
         </nav>
@@ -38,27 +39,28 @@
                 <!-- <input id="image-tumbnail" type="file"> -->
             </section>
             <section class=" flex-basis-half">
-                <form action="" class="d-flex flex-column">
+                <form action="" class="d-flex flex-column" id="input-form">
                     <label for="">Nama Campaign</label>
                     <input id="nama-campaign" type="text" required autofocus>
                     <label class="mt-3 mb-1" for="">Kategori</label>
                     <div class="d-flex justify-content-between">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="kategori" id=" flexRadioDefault1"
+                                value="pendidikan" checked>
+                            <label class=" form-check-label" for="flexRadioDefault1">
                                 Pendidikan
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                                checked>
+                            <input class="form-check-input" type="radio" name="kategori" id=" flexRadioDefault2"
+                                value="kesehatan" checked>
                             <label class="form-check-label" for="flexRadioDefault2">
                                 Kesehatan
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                                checked>
+                            <input class="form-check-input" type="radio" name="kategori" id=" flexRadioDefault2"
+                                value="modal-usaha" checked>
                             <label class="form-check-label" for="flexRadioDefault2">
                                 Modal Usaha
                             </label>
@@ -77,7 +79,8 @@
                         <button class="w-100 border-0 mt-3 py-2 btn-lightblue">Upload File</button>
                     </div>
 
-                    <input class="mt-4 btn bg-Biru text-white tombol-submit" type="submit" value="Publikasi">
+                    <button class="mt-4 btn bg-Biru text-white tombol-submit" type="submit"
+                        id="submit">Publikasi</button>
 
 
                 </form>
