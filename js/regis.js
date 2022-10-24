@@ -61,9 +61,8 @@ form.addEventListener("submit", (event) => {
     
     fetch("https://6353ff98ccce2f8c02010974.mockapi.io/api/web-basic/v1/Users", requestOptions)
       .then(response => response.text())
-      .then(result => console.log(result), regsuccess.innerHTML = '<div class="alert alert-success alert-dismissible fade show" role="alert"><strong>GOOD!</strong> Registration Success<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>')
+      .then(result => console.log(result), regsuccess.innerHTML = '<div class="alert alert-success alert-dismissible fade show" role="alert"><strong>GOOD!</strong> Registration Success<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>') 
       .catch(error => console.log('error', error));
   }
-
+  
 })        
-
