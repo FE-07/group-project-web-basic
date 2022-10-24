@@ -84,7 +84,7 @@
             e.preventDefault();
 
             async function getLogin() {
-                let response = await fetch(`https://6356aa0c2712d01e14f9b1d7.mockapi.io/login?username=${data.uname1}&password=${data.uname2}`)
+                let response = await fetch(`https://6353ff98ccce2f8c02010974.mockapi.io/api/web-basic/v1/Users?username=${data.uname1}&password=${data.uname2}`)
                 let result = await response.json()
                 console.log(result)
 
