@@ -126,10 +126,28 @@
     height: fit-content;
   }
 
+
   .detil-item {
     display: flex;
     flex-direction: row;
   }
+
+
+    /* List campaign*/
+    .container-list{
+        height: fit-content;
+    }
+
+    .detil-item{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .isi-desc{
+        width: 100%;
+        height: 100%;
+    }
+
 
   .isi-desc {
     width: 100%;
