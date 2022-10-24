@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/responsive.css">
+</head>
+
+<body>
+    <!------------- header start ------------------>
+    <header>
+        <nav class="container d-flex align-items-center justify-content-between">
+            <img src="assets/logo Ayo Bantu!.png" alt="logo ayo bantu" height="40">
+            <div class="d-flex align-items-center p-2 navigasi-page">
+                <a class="text-decoration-none ms-5" href="index.html">Home</a>
+                <a class="text-decoration-none ms-5" href="#">Galang Dana</a>
+                <a class="text-decoration-none text-white ms-5 btn bg-Biru" href="login.html">Login</a>
+            </div>
+            <img src="assets/icons-user.png" alt="icons user" height="40p" class="hilang Icon-user">
+        </nav>
+    </header>
+    <!------------- header end -------------------->
+
+    <section>
+        <div class="container login">
+            <div class="image">
+                <img src="./assets/img-landing.png" alt="" class="img-fluid">
+            </div>
+            <div class="form-login mx-3">
+                <h3 class="fw-bold">Login</h3>
+                <div class="d-flex gap-3 mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Admin
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            User
+                        </label>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="masukkan username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="masukkan password">
+                        <div id="keterangan" style="height: 30px; font-size:80%; text-align: center;"></div>
+                    </div>
+                    <button class="btn-darkblue text-white w-100 border-0 my-3 py-2" id="btn-submit">Login</button>
+                    <p class="text-center">belum memiliki akun? <a class="text-decoration-none"
+                            href="./register.html"><span class="fw-bold">Daftar</span></a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+
+    <script>
+        let submit = document.getElementById('btn-submit');
+
+
+        submit.addEventListener('click', (e) => {
+            let data = {
+                uname1: document.getElementById('username').value,
+                uname2: document.getElementById('password').value,
+            };
+
+            e.preventDefault();
+
+            async function getLogin() {
+                let response = await fetch(`https://6356aa0c2712d01e14f9b1d7.mockapi.io/login?username=${data.uname1}&password=${data.uname2}`)
+                let result = await response.json()
+                console.log(result)
+
+
+                if (data != null && result.length >1 ) {
+                    document.getElementById('keterangan').innerText = "Isi Username dan Password terlebih dahulu!"
+                    document.getElementById('keterangan').style.color="red";                    
+                } else {
+                    if(result['username'] == data.uname1){
+                    
+                    }else if(result['password'] == data.uname2){
+                    
+                    }else if(result.length > 0 ){
+                        window.location.href = "index.html"
+                        console.log(result)
+                    }else{
+                    document.getElementById('keterangan').innerText = "Username / Password yang ada masukan salah!"
+                    document.getElementById('keterangan').style.color="red";                    
+                    }   
+                }
+
+            }
+
+            getLogin()
+        });
+    </script>
+</body>
+
+</html>

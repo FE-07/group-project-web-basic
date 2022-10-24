@@ -1,0 +1,156 @@
+@media (max-width: 576px) {
+  /* /////// nav /////////// */
+
+  nav .Icon-user {
+    visibility: visible;
+    position: static;
+  }
+
+  nav .navigasi-page {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  /* /////////// main /////////// */
+  main > div {
+    flex-direction: column;
+  }
+
+  main section {
+    width: 100%;
+  }
+
+  main > section > .card > div:nth-child(2) > div {
+    flex-direction: column;
+  }
+  main section .card .font-kecil {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  /* home */
+  .desc button,
+  .content button {
+    width: 100%;
+    height: 35px;
+  }
+
+  /* List campaign*/
+
+  .container-main {
+    font-size: 14px;
+  }
+
+  .container-list {
+    height: fit-content;
+  }
+
+  .detil-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-campaign {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+    height: 50px;
+  }
+
+  .img-campaign {
+    width: 100%;
+  }
+
+  .isi-desc {
+    text-overflow: ellipsis;
+  }
+
+  .btn-item {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* home */
+  .home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .desc h2 {
+    font-size: 55px;
+  }
+  .desc p {
+    font-size: 20px;
+  }
+  .desc button {
+    width: 150px;
+    height: 35px;
+  }
+  .profile {
+    display: none;
+  }
+
+  /* regis */
+  .regis {
+    display: flex;
+    justify-content: space-between;
+  }
+  .image-regis {
+    height: 250px;
+  }
+  .regis .data {
+    width: 50%;
+  }
+  .regis .berkas {
+    width: 25%;
+  }
+
+  /* login */
+  .login {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+  }
+  .form-login .content,
+  .form-login .content button {
+    width: 400px;
+  }
+
+  /* List campaign*/
+  .container-list {
+    height: fit-content;
+  }
+
+
+  .detil-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+    /* List campaign*/
+    .container-list{
+        height: fit-content;
+    }
+
+    .detil-item{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .isi-desc{
+        width: 100%;
+        height: 100%;
+    }
+
+
+  .isi-desc {
+    width: 100%;
+    height: 100%;
+  }
+}
