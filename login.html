@@ -69,7 +69,7 @@
     <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-        </script>
+    </script>
 
     <script>
         let submit = document.getElementById('btn-submit');
@@ -84,26 +84,30 @@
             e.preventDefault();
 
             async function getLogin() {
-                let response = await fetch(`https://6353ff98ccce2f8c02010974.mockapi.io/api/web-basic/v1/Users?username=${data.uname1}&password=${data.uname2}`)
+                let response = await fetch(
+                    `https://6353ff98ccce2f8c02010974.mockapi.io/api/web-basic/v1/Users?username=${data.uname1}&password=${data.uname2}`
+                )
                 let result = await response.json()
                 console.log(result)
 
 
-                if (data != null && result.length >1 ) {
-                    document.getElementById('keterangan').innerText = "Isi Username dan Password terlebih dahulu!"
-                    document.getElementById('keterangan').style.color="red";                    
+                if (data != null && result.length > 1) {
+                    document.getElementById('keterangan').innerText =
+                        "Isi Username dan Password terlebih dahulu!"
+                    document.getElementById('keterangan').style.color = "red";
                 } else {
-                    if(result['username'] == data.uname1){
-                    
-                    }else if(result['password'] == data.uname2){
-                    
-                    }else if(result.length > 0 ){
-                        window.location.href = "index.html"
+                    if (result['username'] == data.uname1) {
+
+                    } else if (result['password'] == data.uname2) {
+
+                    } else if (result.length > 0) {
+                        window.location.href = "campaign.html"
                         console.log(result)
-                    }else{
-                    document.getElementById('keterangan').innerText = "Username / Password yang ada masukan salah!"
-                    document.getElementById('keterangan').style.color="red";                    
-                    }   
+                    } else {
+                        document.getElementById('keterangan').innerText =
+                            "Username / Password yang ada masukan salah!"
+                        document.getElementById('keterangan').style.color = "red";
+                    }
                 }
 
             }
