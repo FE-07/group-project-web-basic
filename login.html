@@ -85,7 +85,6 @@
             async function getLogin() {
                 let response = await fetch(`https://6356aa0c2712d01e14f9b1d7.mockapi.io/login?username=${data.uname1}&password=${data.uname2}`)
                 let result = await response.json()
-                console.log(result)
 
 
                 if (data != null && result.length >1 ) {
@@ -98,7 +97,7 @@
                     
                     }else if(result.length > 0 ){
                         window.location.href = "index.html"
-                        console.log(result)
+
                     }else{
                     document.getElementById('keterangan').innerText = "Username / Password yang ada masukan salah!"
                     document.getElementById('keterangan').style.color="red";                    
